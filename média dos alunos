@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main(){
+int alunos, cont;
+float soma,nota, media;
+printf("Digite o número de alunos: ");
+scanf("%d", &alunos);
+soma = 0;
+for (cont=1; cont<=alunos; cont++){
+printf("%d° Aluno - Digite nota do aluno: ",cont);
+scanf("%f", &nota);
+soma = soma+nota;
+}
+media=soma/alunos;
+printf("Média = %.1f\n", media);
+return 0;
+}
